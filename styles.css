@@ -107,7 +107,7 @@ p{
  margin:0 auto;
  padding-top: 2vw;
  text-align: left;
- height: 7vw;
+ height: 5vw;
  width: 63vw;
 
 }
@@ -324,6 +324,19 @@ padding-bottom: 5vw;
 
 
 
+.digtext1{
+line-height: 1.4;
+float: right;
+width: 63vw;
+height: 2vw;
+font-style: normal;
+color:#4B4A4A;
+font-weight: 500;
+font-size:1.3vw;
+font-family:franklin-gothic-urw, sans-serif;
+
+}
+
 
 .nivasimageslogo{
   padding-top: 3vw;
@@ -334,6 +347,18 @@ padding-bottom: 5vw;
   position: relative;
   height: 32vw;
   width: 63vw;
+
+}
+
+.nivasimages3{
+  padding-top: 1vw;
+  margin: 0 auto;
+  padding-bottom: 2vw;
+  background-color: transparent;
+  display: flex;
+  position: relative;
+  height: 45vw;
+  width: 43vw;
 
 }
 
@@ -348,6 +373,8 @@ padding-bottom: 5vw;
   width: 63vw;
 
 }
+
+
 .nivasimages1 img{
   position: absolute;
   height: 45vw;
