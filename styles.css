@@ -362,6 +362,49 @@ font-family:franklin-gothic-urw, sans-serif;
 
 }
 
+.nivasimages4{
+  padding-top: 1vw;
+  margin: 0 auto;
+  padding-bottom: 2vw;
+  background-color: transparent;
+  display: flex;
+  position: relative;
+  height: 38vw;
+  width: 63vw;
+
+}
+
+.nivasimages5{
+  padding-top: 1vw;
+  margin: 0 auto;
+  padding-bottom: 2vw;
+  background-color: transparent;
+  display: flex;
+  position: relative;
+  height: 38vw;
+  width: 63vw;
+
+}
+
+
+.nivasimages5 img{
+  position: absolute;
+  height: 38vw;
+  width: 63vw;
+ 	overflow: hidden;
+}
+
+.nivasimages5 .front{
+  z-index: 9999;
+ transition: opacity .12s linear;
+ cursor: pointer;
+}
+
+ .nivasimages5:hover .front{
+   opacity: 0;
+ }
+
+
 .nivasimages1{
   padding-top: 1vw;
   margin: 0 auto;
@@ -392,6 +435,17 @@ font-family:franklin-gothic-urw, sans-serif;
    opacity: 0;
  }
 
+
+ .nivasimages6{
+   margin: 0 auto;
+   padding-bottom: 2vw;
+   background-color: transparent;
+   display: flex;
+   position: relative;
+   height: 25vw;
+   width: 63vw;
+
+ }
 
 .nivasimages2{
   margin: 0 auto;
