@@ -442,7 +442,18 @@ font-family:franklin-gothic-urw, sans-serif;
    background-color: transparent;
    display: flex;
    position: relative;
-   height: 25vw;
+   height: 20vw;
+   width: 63vw;
+
+ }
+
+ .nivasimages7{
+   margin: 0 auto;
+   padding-bottom: 2vw;
+   background-color: transparent;
+   display: flex;
+   position: relative;
+   height: 42vw;
    width: 63vw;
 
  }
