@@ -565,3 +565,15 @@ a:hover {
   background-color: transparent;
   margin: 0 auto;
 }
+
+
+a.vimeo{
+  text-decoration: underline;
+color: #4B4A4A;
+  text-align: left;
+  font-weight: 500;
+  font-size: 1.4vw;
+  font-family: georgia;
+  line-height: 2vw;
+  font-style: italic;
+}
