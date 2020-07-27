@@ -3,39 +3,46 @@
 
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="style1.css" />
   <link rel="stylesheet" href="https://use.typekit.net/fig6vnc.css">
-  <link rel="icon" href="images/ss.png" type="image/x-icon">
-
+  <link rel="icon" href="images/s.png" type="image/x-icon">
   <title>Windspeed</title>
 </head>
 
 <body>
   <div class="main">
-    <div class="homepage">
-      <!-- <a href="index.html">  <div class="home">SIMRAN RAO</div> </a> -->
-      <a href="about.html">
-        <div class="about">ABOUT</div>
-      </a>
-      <a href="index.html">
-        <div class="work">PROJECTS</div>
-      </a>
-      <a href="https://drive.google.com/file/d/1jIOQ_6oZoxDZNsTDfYSxK0PIj3iTbWpS/view?usp=sharing" target="external">
-        <div class="resume">RESUME</div>
-      </a>
-    </div>
+    <div class="main-section">
 
-    <div class="name"> WINDSPEED</div>
-    <div class="header">
-      <div class="textwind">
-        <p>This webpage was inspired by the constant
-          change in temperature, particularly the change in windspeed.
-          The CSS is linked to a weather API which shows the change
-          in windspeeds around the world. The faster the speed of wind in
-          real time, the quicker the lines move and the more saturated the
-          colors get.<br> Created with Javascript, CSS and HTML</p>
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="about.html">ABOUT</a>
+          <a href="index.html">PROJECTS</a>
+          <a href="https://vimeo.com/raosimran">VIMEO</a>
+          <!-- <a href="https://drive.google.com/file/d/1eaf5pQa4jguR3a-YcvgD5_WNbcDz6_dS/view?usp=sharing">RESUME</a> -->
+        </div>
       </div>
-      <div class="videowind">
+      <span class="plus" style="cursor:pointer" onclick="openNav()"> + </span>
+
+      <a href="index.html">
+        <div class="name"> Windspeed</div>
+      </a>
+      <div class="title"> HTML/CSS/JS </div>
+
+
+      <div class="project1-boxes">
+
+        <div class="p1box">
+          <p class="text"> This webpage was inspired by the idea of visually displaying what
+             temperature looks like abstractly and linearly, based on what it makes
+             an individual feel. The site is linked to a weather API that shows the changes in windspeeds around the world. The faster the speed of
+             wind in real-time, the quicker the lines move, and the more saturated
+             the colors get.</p>
+
+        </div>
+      </div>
+          <br>
+      <div class="video-wind">
         <video width="100%" height="100%" controls>
           <source src="images/windspeed.mp4" type="video/mp4">
           <source src="movie.ogg" type="video/ogg">
@@ -44,8 +51,23 @@
       </div>
 
 
+      <div class="next"> <a href="project6.html"> next </a></div>
+      <div class="year-wind"> ©2020 </div>
 
     </div>
+  </div>
+
+
+
+  <script>
+    function openNav() {
+      document.getElementById("myNav").style.width = "100%";
+    }
+
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+    }
+  </script>
 </body>
 
 </html>
