@@ -50,6 +50,16 @@
       </div>
 
 
+                <div class="clearfix"></div>
+
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+                  <span class="close"></span>
+                  <img class="modal-content" id="img01">
+                  <!-- <div id="caption"></div> -->
+                </div>
+
+
       <div class="next"> <a href="project4.html"> next </a></div>
       <div class="year"> ©2020 </div>
     </div>
@@ -64,6 +74,32 @@
                 function closeNav() {
                   document.getElementById("myNav").style.width = "0%";
                 }
+
+
+                      var modal = document.getElementById('myModal');
+
+                      modal.addEventListener('click', function() {
+                        this.style.display = "none";
+                      })
+
+                      var span = document.getElementsByClassName("close")[0];
+
+                      span.onclick = function() {
+                        modal.style.display = "none";
+                      }
+
+                      var images = document.getElementsByTagName('img');
+                      var modalImg = document.getElementById("img01");
+
+                      var i;
+                      for (i = 0; i < images.length; i++) {
+                        images[i].onclick = function() {
+                          modal.style.display = "block";
+                          modalImg.src = this.src;
+                          modalImg.alt = this.alt;
+                          captionText.innerHTML = this.nextElementSibling.innerHTML;
+                        }
+                      }
               </script>
 </body>
 
