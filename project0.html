@@ -3,49 +3,110 @@
 
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style1.css" />
   <link rel="stylesheet" href="https://use.typekit.net/fig6vnc.css">
-  <link rel="icon" href="images/ss.png" type="image/x-icon">
-
-  <title>Population</title>
+  <link rel="icon" href="images/s.png" type="image/x-icon">
+  <title>Sign of the Times</title>
 </head>
 
 <body>
   <div class="main">
-    <div class="homepage">
-      <!-- <a href="index.html">  <div class="home">SIMRAN RAO</div> </a> -->
-      <a href="about.html">
-        <div class="about">ABOUT</div>
-      </a>
-      <a href="index.html">
-        <div class="work">PROJECTS</div>
-      </a>
-      <a href="https://drive.google.com/file/d/1jIOQ_6oZoxDZNsTDfYSxK0PIj3iTbWpS/view?usp=sharing" target="external">
-        <div class="resume">RESUME</div>
-      </a>
-    </div>
-
-    <div class="name"> POPULATION</div>
-    <div class="header">
-      <div class="textpop">
-        <p> This webpage was made with a population API that produced
-          kaleidoscopic patterns based on live birth and
-          death rates of every continent. This was designed with the intent to show a contrast
-          between the stark reality of life and death with creativity and vibrance of a
-          kaleidoscope.
-          <br> Created with Javascript, p5.js, CSS and HTML</p>
+    <div class="main-section">
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="about.html">ABOUT</a>
+          <a href="index.html">PROJECTS</a>
+          <a href="https://vimeo.com/raosimran">VIMEO</a>
+          <!-- <a href="https://drive.google.com/file/d/1eaf5pQa4jguR3a-YcvgD5_WNbcDz6_dS/view?usp=sharing">RESUME</a> -->
+        </div>
       </div>
+      <span class="plus" style="cursor:pointer" onclick="openNav()"> + </span>
 
-      <div class="video">
-        <video width="100%" height="100%" controls>
-          <source src="images/Population.mp4" type="video/mp4">
-          <source src="movie.ogg" type="video/ogg">
-          Your browser does not support the video tag.
-        </video>
+    <a href="index.html">  <div class="name"> Sign of
+the Times </div></a>
+      <div class="title"> EDITORIAL</div>
+
+      <div class="project1-boxes">
+
+        <div class="p1box">
+          <p class="text">This remixed book is a combination of illustrations from an
+            afro-feminist coloring book called Avie's Dreams and feminist
+             poetry from African-American poets. The goal was to highlight
+             the beautiful, minimalistic drawings as well as the powerful
+            words from these incredible women.</p>
+          <br> <br>
+
+
+          <div class="sign-images"><img src="images/signpic2.png" height="100%" width="100%"></a> </div>
+          <div class="sign-images"><img src="images/signpic.png" height="100%" width="100%"></a> </div>
+          <div class="sign-images"><img src="images/signpic3.png" height="100%" width="100%"></a> </div>
+          <p class="sign-heading"> A QUICK LOOK</p>
+          <div class="sign-images"><img src="images/sign.gif" height="100%" width="100%"></a> </div>
+
+
+          <div class="clearfix"></div>
+
+          <!-- The Modal -->
+          <div id="myModal" class="modal">
+            <span class="close"></span>
+            <img class="modal-content" id="img01">
+            <!-- <div id="caption"></div> -->
+          </div>
+
+
+          <br><br>
+
+          <div class="next-sign"> <a href="project0.html"> next </a></div>
+          <div class="year">©2020 </div>
+
+        </div>
       </div>
-
-
     </div>
+  </div>
+
+
+
+  <script>
+    function openNav() {
+      document.getElementById("myNav").style.width = "100%";
+    }
+
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+    }
+
+
+
+
+        var modal = document.getElementById('myModal');
+
+        modal.addEventListener('click', function() {
+          this.style.display = "none";
+        })
+
+        var span = document.getElementsByClassName("close")[0];
+
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+
+        var images = document.getElementsByTagName('img');
+        var modalImg = document.getElementById("img01");
+
+        var i;
+        for (i = 0; i < images.length; i++) {
+          images[i].onclick = function() {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            modalImg.alt = this.alt;
+            captionText.innerHTML = this.nextElementSibling.innerHTML;
+          }
+        }
+  </script>
+
+
 </body>
 
 </html>
