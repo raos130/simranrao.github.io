@@ -3,109 +3,70 @@
 
 <head>
   <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style1.css" />
+  <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="https://use.typekit.net/fig6vnc.css">
-  <link rel="icon" href="images/s.png" type="image/x-icon">
-  <title>Sign of the Times</title>
+  <link rel="icon" href="images/ss.png" type="image/x-icon">
+
+  <title>Director's Edition</title>
 </head>
 
 <body>
   <div class="main">
-    <div class="main-section">
-      <div id="myNav" class="overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <div class="overlay-content">
-          <a href="about.html">ABOUT</a>
-          <a href="project.html">PROJECTS</a>
-          <a href="https://vimeo.com/raosimran">VIMEO</a>
-          <!-- <a href="https://drive.google.com/file/d/1eaf5pQa4jguR3a-YcvgD5_WNbcDz6_dS/view?usp=sharing">RESUME</a> -->
-        </div>
-      </div>
-      <span class="plus" style="cursor:pointer" onclick="openNav()"> + </span>
-
-    <a href="project.html">  <div class="name"> Sign of
-the Times </div></a>
-      <div class="title"> EDITORIAL</div>
-
-      <div class="project1-boxes">
-
-        <div class="p1box">
-          <p class="text">This remixed book is a combination of illustrations from an
-            afro-feminist coloring book called Avie's Dreams and feminist
-             poetry from African-American poets. The goal was to highlight
-             the beautiful, minimalistic drawings as well as the powerful
-            words from these incredible women.</p>
-          <br> <br>
-
-
-          <div class="sign-images"><img src="images/signpic2.png" height="100%" width="100%"></a> </div>
-          <div class="sign-images"><img src="images/signpic.png" height="100%" width="100%"></a> </div>
-          <div class="sign-images"><img src="images/signpic3.png" height="100%" width="100%"></a> </div>
-          <p class="sign-heading"> A QUICK LOOK</p>
-          <div class="sign-images"><img src="images/sign.gif" height="100%" width="100%"></a> </div>
-
-
-          <div class="clearfix"></div>
-
-          <!-- The Modal -->
-          <div id="myModal" class="modal">
-            <span class="close"></span>
-            <img class="modal-content" id="img01">
-            <!-- <div id="caption"></div> -->
-          </div>
-
-
-          <br><br>
-
-          <div class="next-sign"> <a href="project0.html"> next </a></div>
-          <div class="year">©2020 </div>
-
-        </div>
-      </div>
+    <div class="homepage">
+      <!-- <a href="index.html"> <div class="home">SIMRAN RAO</div> </a> -->
+      <a href="about.html">
+        <div class="about">ABOUT</div>
+      </a>
+      <a href="index.html">
+        <div class="work">PROJECTS</div>
+      </a>
+      <a href="https://drive.google.com/file/d/1jIOQ_6oZoxDZNsTDfYSxK0PIj3iTbWpS/view?usp=sharing" target="external">
+        <div class="resume">RESUME</div>
+      </a>
     </div>
-  </div>
 
+    <div class="name"> DIRECTOR'S EDITION</div>
+    <div class="header">
+      <div class="textdirector">
+        <p>A series of publications highlighting some
+          of my favorite directors and trying to encapsulate their style
+          and common themes that recur in their films in the design of each publication.
+          <br>Created with Indesign</p>
+      </div>
 
+      <div class="gifs">
+        <div class="alfredtext">
+          <p class="directortext">ALFRED HITCHCOCK </p>
+          <p class="directortext1">This publication was inspired by the posters of some of
+            Hitchcock's most iconic films, <i> Vertigo</i> and <i>Just Dial M for Murder,</i>
+            as well as his themes of danger and suspense, which I represented with bold colors and text. The narrow
+            columns of text are reminescent of his simple yet dynamic style of story-telling, making something
+            interesting from very few elements, as seen in <i> Rear Window.</i></p>
+        </div>
 
-  <script>
-    function openNav() {
-      document.getElementById("myNav").style.width = "100%";
-    }
+        <div class="alfred"> <img src="images/alfred.gif" height="100%" width="100%">
+          </a> </div>
 
-    function closeNav() {
-      document.getElementById("myNav").style.width = "0%";
-    }
-
-
-
-
-        var modal = document.getElementById('myModal');
-
-        modal.addEventListener('click', function() {
-          this.style.display = "none";
-        })
-
-        var span = document.getElementsByClassName("close")[0];
-
-        span.onclick = function() {
-          modal.style.display = "none";
-        }
-
-        var images = document.getElementsByTagName('img');
-        var modalImg = document.getElementById("img01");
-
-        var i;
-        for (i = 0; i < images.length; i++) {
-          images[i].onclick = function() {
-            modal.style.display = "block";
-            modalImg.src = this.src;
-            modalImg.alt = this.alt;
-            captionText.innerHTML = this.nextElementSibling.innerHTML;
-          }
-        }
-  </script>
-
+        <div class="denistext">
+          <p class="directortext">DENIS VILLENEUVE </p>
+          <p class="directortext1">Villeneuve is known for his dark, psychological thrillers complete with unexpected
+            plot twist. To encapsulate the tone, I used a dark color palette with a white to create a vivid contrast.
+            The flipped text plays with his themes of chaos and twist endings, as seen in <i>Enemy</i> and <i>Prisoners</i>
+            as well as the introspective nature of the film. His films are known for their strong visual aesthetics,
+            and I tried to create my own stark color palette for this publication. </p>
+        </div>
+        <div class="alfred"> <img src="images/denis.gif" height="100%" width="100%">
+          </a> </div>
+        <div class="nolantext">
+          <p class="directortext"> CHRISTOPHER NOLAN</p>
+          <p class="directortext1">This publication was inspired by Nolan's signature style of film-making.
+            To represent his themes of identity and twins, as seen in <i>Inception</i> and <i> The Prestige</i>,
+            I used multiple fonts and contrasted each alternate page to create a dynamic sense of reptition.
+            Another staple element in his films, is his non-linear way of story-telling. The offset emphasised text is a break from this publications set guide of narrating content. </p>
+        </div>
+        <div class="alfred"> <img src="images/nolan.gif" height="100%" width="100%">
+          </a> </div>
+      </div>
 
 </body>
 

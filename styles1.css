@@ -1,0 +1,169 @@
+body{
+background-color: #F0F0F0;
+color: #4B4A4A;
+}
+
+
+.main{
+  margin: 0 auto;
+  height: 50vw;
+  width: 70vw;
+  border: transparent;
+}
+.homepage{
+display: flex;
+flex-direction: row;
+justify-content:flex-end;
+font-family: franklin-gothic-urw, sans-serif;
+color: #D8D8D8;
+font-size: 1vw;
+font-weight: 700;
+padding-bottom: 2vw;
+
+}
+
+/* .home{
+  font-size: 1.8vw;
+  height: 2vw;
+  width:11vw;
+  padding: 1vw;
+}
+.home:hover{
+  color: #4B4A4A;
+} */
+
+.about{
+  font-size: 1.8vw;
+  height: 2vw;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+  padding-right: 2vw;
+  width:4vw;
+}
+.about:hover{
+  color: #4B4A4A;
+}
+.resume{
+  font-size: 1.8vw;
+  height: 2vw;
+  padding: 1vw;
+  width:6vw;
+}
+.resume:hover{
+  color: #4B4A4A;
+}
+
+.work{
+  font-size: 1.8vw;
+  height: 2vw;
+  padding: 1vw;
+  width:8vw;
+}
+.work:hover{
+  color: #4B4A4A;
+}
+
+
+
+.image{
+  background-image: url(images/me.png);
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+  float: left;
+  border: transparent;
+  width: 30vw;
+  height: 22vw;
+  background-color: #4B4A4A;
+  margin-left: 5%;
+  padding-left: 4%;
+  margin-bottom: 5%;
+
+}
+
+.header{
+  display: flex;
+  font-size: 3vw;
+  font-family: franklin-gothic-urw, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  justify-content: left;
+  padding-bottom: 7vw;
+}
+
+.me{
+  /* text-align: justify; */
+  line-height: 1.4;
+  float: right;
+  margin: 0 auto;
+  width: 27vw;
+  height: 20vw;
+  color:#4B4A4A;
+  font-weight: 500;
+  font-size:1.3vw;
+  font-family:franklin-gothic-urw, sans-serif;
+}
+
+.name{
+  font-size: 10vw;
+  padding-left: 5%;
+  padding-top: 1vw;
+  padding-bottom: 4vw;
+  font-family: franklin-gothic-urw, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+a:link{
+  color:#D8D8D8;;
+  font-family: franklin-gothic-urw, sans-serif;
+  font-size: 2vw;
+  font-weight: 700;
+  font-style: normal;
+  text-decoration: none;
+}
+
+a:visited{
+  color:#D8D8D8;
+  font-family: franklin-gothic-urw, sans-serif;
+  font-size: 2vw;
+  font-weight: 700;
+  font-style: normal;
+  text-decoration: none;
+}
+
+a:hover{
+  color:#D8D8D8;
+  font-family: franklin-gothic-urw, sans-serif;
+  font-size: 2vw;
+  font-weight: 700;
+  font-style: normal;
+  text-decoration: none;
+}
+
+@media only screen and (max-width:600px){
+
+.projects1 .projects2 .projects3 .projects4 .projects5 .projects6{
+  height: 50vw;
+  margin-bottom: 20px;
+}
+
+.image{
+  height: 43vw;
+  width: 100%;
+}
+
+.me{
+  font-family:franklin-gothic-urw, sans-serif;
+  height: 50vw;
+  width: 100%;
+  font-weight: 500;
+  font-size:2vw;
+  margin: 0 auto;
+  line-height: 1.4;
+  float: right;
+  margin-left: 4vw;
+}
+
+
+}
