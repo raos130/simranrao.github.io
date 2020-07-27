@@ -3,49 +3,136 @@
 
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="style1.css" />
   <link rel="stylesheet" href="https://use.typekit.net/fig6vnc.css">
-  <link rel="icon" href="images/ss.png" type="image/x-icon">
-
-  <title>Alai</title>
+  <link rel="icon" href="images/s.png" type="image/x-icon">
+  <title>Motion Graphics</title>
 </head>
 
 <body>
   <div class="main">
-    <div class="homepage">
-      <!-- <a href="index.html">  <div class="home">SIMRAN RAO</div> </a> -->
-      <a href="about.html">
-        <div class="about">ABOUT</div>
-      </a>
-      <a href="index.html">
-        <div class="work">PROJECTS</div>
-      </a>
-      <a href="https://drive.google.com/file/d/1jIOQ_6oZoxDZNsTDfYSxK0PIj3iTbWpS/view?usp=sharing" target="external">
-        <div class="resume">RESUME</div>
-      </a>
+    <div class="main-section">
+
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="about.html">ABOUT</a>
+          <a href="project.html">PROJECTS</a>
+          <a href="https://vimeo.com/raosimran">VIMEO</a>
+          <!-- <a href="https://drive.google.com/file/d/1eaf5pQa4jguR3a-YcvgD5_WNbcDz6_dS/view?usp=sharing">RESUME</a> -->
+        </div>
+      </div>
+      <span class="plus" style="cursor:pointer" onclick="openNav()"> + </span>
+
+    <a href="project.html">  <div class="name-motion"> Motion Exploration</div> </a>
+      <div class="title"> MOTION GRAPHICS </div>
+
+
+      <div class="project1-boxes">
+
+        <div class="p1box-mg">
+          <p class="text"> A few examples of my experimentations in After Effects and Cinema4D.
+            Check out some more of my work <a href="https://vimeo.com/raosimran"> here! </a> </p>
+
+        </div>
+      </div>
+
+      <div class="video-mg">
+        <div class="video1">
+          <video width="100%" height="100%" poster="images/barry.png" controls>
+            <source src="images/barrry1.mp4" type="video/mp4">
+            <source src="movie.ogg" type="video/ogg">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="video1">
+          <video width="100%" height="100%" controls>
+            <source src="images/collage.mp4" type="video/mp4">
+            <source src="movie.ogg" type="video/ogg">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+      <br>
+      <!-- <p class="sign-heading">EXPLAINER</p> -->
+      <div class="video-mg">
+
+        <iframe class="video2" src="https://player.vimeo.com/video/408303695" width="100%" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        <!-- <img src="images/uglyveg1.png" height="100%" width="100%"> -->
+
+        <iframe class="video2" src="https://player.vimeo.com/video/433556714" width="100%"frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        <!-- <img src="images/homeless.png" height="100%" width="100%"> -->
+      </div>
+
+      <br>
+
+      <div class="video-mg-1">
+        <div class="video3">
+          <img src="images/spinning.gif" height="100%" width="100%">
+        </div>
+
+        <div class="video3">
+          <img src="images/torus.gif" height="100%" width="100%">
+        </div>
+
+        <div class="video3">
+          <img src="images/flower.gif" height="100%" width="100%">
+        </div>
+      </div>
+      <div class="clearfix"></div>
+
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+        <span class="close">×</span>
+        <img class="modal-content" id="img01">
+        <!-- <div id="caption"></div> -->
+      </div>
+
+
+
+
+      <div class="next-mg"> <a href="project5.html"> next </a></div>
+      <div class="year-wind"> ©2020 </div>
+
     </div>
-
-    <div class="name"> ALAI</div>
-    <div class="header">
-      <div class="textwind">
-        <p> Alai is a rounded san-serif that aims to combine the gentle
-          curved elements of a Devanagari typeface with the more modern and unique
-          features of a Latin typeface. This typeface was created with its Devanagari counterpart in
-          mind, which is currently being worked on.
-          <br> Created with Gylphs</p>
-      </div>
-      <div class="videowind">
-        <iframe src="images/alai.pdf" width="100%" height="500px"> </iframe>
-      </div>
-
-      <div class="videowind">
-
-
-      </div>
+  </div>
 
 
 
-    </div>
+  <script>
+    function openNav() {
+      document.getElementById("myNav").style.width = "100%";
+    }
+
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+    }
+
+    var modal = document.getElementById('myModal');
+
+    modal.addEventListener('click', function() {
+      this.style.display = "none";
+    })
+
+    var span = document.getElementsByClassName("close")[0];
+
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+
+    var images = document.getElementsByTagName('img');
+    var modalImg = document.getElementById("img01");
+
+    var i;
+    for (i = 0; i < images.length; i++) {
+      images[i].onclick = function() {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        modalImg.alt = this.alt;
+        captionText.innerHTML = this.nextElementSibling.innerHTML;
+      }
+    }
+  </script>
 </body>
 
 </html>

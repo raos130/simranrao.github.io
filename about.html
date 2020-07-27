@@ -1,38 +1,109 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel = "stylesheet" href = "styles1.css" />
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="about.css" />
   <link rel="stylesheet" href="https://use.typekit.net/fig6vnc.css">
-<link rel="icon" href="images/ss.png" type="image/x-icon">
+  <link rel="icon" href="images/s.png" type="image/x-icon">
+  <title>About </title>
+</head>
 
-        <title>About</title>
-      </head>
-      <body>
-            <div class="main">
-              <div class="homepage">
-              <!-- <a href="index.html">  <div class="home">SIMRAN RAO</div> </a> -->
-                <a href="about.html">  <div class="about">ABOUT</div> </a>
-              <a href="index.html">   <div class="work">PROJECTS</div> </a>
-              <a href="https://drive.google.com/file/d/1jIOQ_6oZoxDZNsTDfYSxK0PIj3iTbWpS/view?usp=sharing" target="external">  <div class="resume">RESUME</div> </a>
-              </div>
+<body>
+  <div class="main">
+    <div class="main-section">
+
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="about.html">ABOUT</a>
+          <a href="project.html">PROJECTS</a>
+          <a href="https://vimeo.com/raosimran">VIMEO</a>
+          <!-- <a href="https://drive.google.com/file/d/1eaf5pQa4jguR3a-YcvgD5_WNbcDz6_dS/view?usp=sharing">RESUME</a> -->
+        </div>
+      </div>
+      <span class="plus" style="cursor:pointer" onclick="openNav()"> + </span>
 
 
-              <div class="name">ABOUT ME</div>
+    <a href="project.html">  <div class="name"> ABOUT </div> </a>
+      <div class="box-about">
 
-                <div class="header">
+        <div class="text-box">
+          <p class="hello"> Hi, I'm Simran!</p>
+          <p class="text-bio"> I am currently a senior at Parsons School of Design in New York City,
+            majoring in Communication Design. Having been born and raised in Mumbai,
+            I have been influenced by films from the Eastern as well as Western culture, which
+            have always remained a constant source of inspiration for my works.
+            As a designer, I am particularly interested in Branding, Editorial Design, Type Design,
+            and Motion Graphics.
+            I am currently working on the Devanagari counterpart to my font Alai.
+            <br> <br>
+            Contact me if you would like to see my resume or make any inquiries about freelance work!
+           </p>
 
-              <div class="image"></div>
+          <div class="text-bio-links1">
 
-              <p class="me"> Simran Rao is a designer from India,
-                based in New York City. She is presently studying Communication
-                Design at Parsons School of Design. Her lie in Branding,
-                Motion Graphics, Typeface Design and Editorial Design.
-                <br>Apart from design, she has a huge passion for films.
-                Growing up in Mumbai, she has been influenced by films from the Eastern
-                as well as Western culture.
-                Currently, she is working on her type design skills as well as the Devanagari counterpart to Alai.</div>
+            <!-- <div class="text-bio-links2">
+              <p class="text-bio-links"> Instagram</p>
+            </div> -->
 
-                    </div>
-                      </body>
-                    </html>
+            <div class="text-bio-links2">
+              <p class="text-bio-links"> <a href="https://www.linkedin.com/in/simranrao">LinkedIn </a></p>
+            </div>
+
+            <div class="text-bio-links2">
+              <p class="text-bio-links"> <a href="mailto: simran@newschool.edu"> Email </a> </p>
+            </div>
+
+          </div>
+        </div>
+        <div class="box-me">
+          <img src="images/me.png" width="100%">
+        </div>
+
+
+      </div>
+
+      <div class="year"> ©2020 </div>
+    </div>
+  </div>
+
+  <script>
+  function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+  }
+
+  function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+  }
+
+  var modal = document.getElementById('myModal');
+
+  modal.addEventListener('click', function() {
+    this.style.display = "none";
+  })
+
+  var span = document.getElementsByClassName("close")[0];
+
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+
+  var images = document.getElementsByTagName('img');
+  var modalImg = document.getElementById("img01");
+
+  var i;
+  for (i = 0; i < images.length; i++) {
+    images[i].onclick = function() {
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      modalImg.alt = this.alt;
+      captionText.innerHTML = this.nextElementSibling.innerHTML;
+    }
+  }
+  </script>
+
+</body>
+
+</html>
