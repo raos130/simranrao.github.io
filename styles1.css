@@ -17,8 +17,9 @@ body {
 }
 
 .next {
+word-spacing: 1.5vw;
   height: 2vw;
-  width: 17vw;
+  width: 24vw;
   font-family: quiche-sans, sans-serif;
   font-size: 2vw;
   text-align: left;
@@ -246,8 +247,9 @@ a:hover {
 }
 
 .next-alai {
+  word-spacing: 1.5vw;
+  width: 24vw;
   height: 2vw;
-  width: 17vw;
   font-family: quiche-sans, sans-serif;
   font-size: 2vw;
   margin-top: 7vw;
@@ -277,8 +279,9 @@ a:hover {
 }
 
 .next-dig {
+  word-spacing: 1.5vw;
   height: 2vw;
-  width: 17vw;
+  width: 24vw;
   font-family: quiche-sans, sans-serif;
   font-size: 2vw;
   margin-top: 121vw;
@@ -505,9 +508,10 @@ a:hover {
 }
 
 .next-sign {
+  word-spacing: 1.5vw;
   /* border: 3px solid pink; */
   height: 2vw;
-  width: 17vw;
+  width: 24vw;
   font-family: quiche-sans, sans-serif;
   font-size: 2vw;
   text-align: left;
@@ -637,7 +641,8 @@ gImg {
 /* nivas mumbai */
 .next-nivas {
   height: 2vw;
-  width: 17vw;
+  word-spacing: 1.5vw;
+  width: 24vw;
   font-family: quiche-sans, sans-serif;
   font-size: 2vw;
   margin-top: 218vw;
@@ -893,8 +898,9 @@ gImg {
 }
 
 .next-mg {
+  word-spacing: 1.5vw;
   height: 2vw;
-  width: 17vw;
+  width: 24vw;
   font-family: quiche-sans, sans-serif;
   font-size: 2vw;
   margin-top: 7vw;
