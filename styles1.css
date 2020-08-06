@@ -911,6 +911,7 @@ gImg {
 }
 
 .next-director {
+  word-spacing: 1.5vw;
   height: 2vw;
   width: 17vw;
   font-family: quiche-sans, sans-serif;
