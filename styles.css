@@ -79,6 +79,7 @@ a {
 }
 
 .text-box {
+  font-family: quiche sans, sans-serif;
   text-decoration: none;
   display: flex;
   height: 29vw;
