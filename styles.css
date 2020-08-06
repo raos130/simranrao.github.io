@@ -79,7 +79,7 @@ a {
 }
 
 .text-box {
-  font-family: quiche-sans;
+  font-family: quiche-sans, sans-serif;
   text-decoration: none;
   display: flex;
   height: 29vw;
@@ -96,7 +96,7 @@ a {
   line-height: 0vw;
   font-size: 2.4vw;
   font-weight: 300;
-  font-family: quiche-sans;
+  font-family: quiche-sans, sans-serif;
   outline: none;
   color: #1E261B;
   background-color: inherit;
@@ -109,7 +109,7 @@ a {
   line-height: 2vw;
   font-size: 1.4vw;
   font-weight: 300;
-  font-family: quiche-sans;
+  font-family: quiche-sans, sans-serif;
   outline: none;
   color: #1E261B;
   background-color: inherit;
