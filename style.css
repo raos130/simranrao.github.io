@@ -4,11 +4,12 @@ body {
 }
 
 .main {
-  height: 130vw;
+  height: 150vw;
   margin: auto;
   padding: -30vw;
   width: 94vw;
   text-align: center;
+  /* border: 3px solid red; */
 }
 
 .main-section {
@@ -34,12 +35,10 @@ body {
 
 .year {
   padding-bottom: 2vw;
-  /* border: 3px solid red; */
   margin-top: 1vw;
   height: 2vw;
   width: 87vw;
   font-family: quiche-sans, sans-serif;
-
   font-size: 1.2vw;
   text-align: right;
   font-weight: 400;
@@ -119,7 +118,7 @@ a:hover {
 .main-boxes {
   vertical-align: top;
   display: flex;
-  height: 110vw;
+  height: 135vw;
   margin: auto;
   padding-top: 4vw;
   padding-bottom: 2vw;
@@ -178,6 +177,10 @@ a:hover {
   width: 100%;
 }
 
+.box8:hover .overlay1 {
+  width: 100%;
+}
+
 .text-sign {
   color: #1E261B;
   line-height: 4vw;
@@ -225,7 +228,7 @@ a:hover {
   width: 42vw;
 }
 
-.box2, .box3 {
+.box2 {
   position: relative;
   justify-content: space-around;
   height: 25vw;
@@ -233,7 +236,7 @@ a:hover {
   width: 42vw;
 }
 
-.box4, .box5 {
+ .box3 {
   position: relative;
   justify-content: space-around;
   height: 25vw;
@@ -241,7 +244,37 @@ a:hover {
   width: 42vw;
 }
 
-.box6, .box7 {
+.box4 {
+  position: relative;
+  justify-content: space-around;
+  height: 25vw;
+  margin: auto;
+  width: 42vw;
+}
+.box5 {
+  position: relative;
+  justify-content: space-around;
+  height: 25vw;
+  margin: auto;
+  width: 42vw;
+}
+
+.box6 {
+  position: relative;
+  justify-content: space-around;
+  height: 25vw;
+  margin: auto;
+  width: 42vw;
+}
+.box7{
+  position: relative;
+  justify-content: space-around;
+  height: 25vw;
+  margin: auto;
+  width: 42vw;
+}
+
+.box8 {
   position: relative;
   justify-content: space-around;
   height: 25vw;
@@ -443,13 +476,29 @@ padding-top: 3vw;
     padding-top: 5vw;
   }
 
-  .box6, .box7 {
+  .box6{
     position: relative;
     justify-content: center;
     width: 78vw;
     height: 50vw;
     padding-top: 5vw;
   }
+.box7 {
+    position: relative;
+    justify-content: center;
+    width: 78vw;
+    height: 50vw;
+    padding-top: 5vw;
+  }
+
+  .box8{
+    position: relative;
+    justify-content: center;
+    width: 78vw;
+    height: 50vw;
+    padding-top: 5vw;
+  }
+
 
   .image {
     margin: 0 auto;
@@ -517,6 +566,10 @@ padding-top: 3vw;
   }
 
   .box7:hover .overlay1 {
+    width: 100%;
+  }
+
+  .box8:hover .overlay1 {
     width: 100%;
   }
 

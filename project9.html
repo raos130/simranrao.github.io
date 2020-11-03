@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles1.css" />
+  <link rel="stylesheet" href="https://use.typekit.net/fig6vnc.css">
+  <link rel="icon" href="images/s-icon.png" type="image/x-icon">
+  <title>CineNav</title>
+</head>
+
+<body>
+  <div class="main">
+    <div class="main-section">
+
+
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="about.html">ABOUT</a>
+          <a href="index.html">PROJECTS</a>
+          <a href="https://vimeo.com/raosimran" target="_blank">VIMEO</a>
+          <!-- <a href="https://drive.google.com/file/d/1eaf5pQa4jguR3a-YcvgD5_WNbcDz6_dS/view?usp=sharing">RESUME</a> -->
+        </div>
+      </div>
+      <span class="plus" style="cursor:pointer" onclick="openNav()"> + </span>
+
+      <a href="index.html">
+        <div class="name"> CineNav</div>
+      </a>
+      <div class="title"> UI/UX </div>
+
+
+      <div class="project1-boxes">
+
+        <div class="p1box">
+          <p class="text"> CineNav aims to create a simple and efficient process of going to the movie theatre. By creating elements within the app that help the user navigate to their seat easily, as well as widgets and notifications about
+            leaving for the movie on time, it will not only reduce long lines checking
+            into the theatre, but also prevent seating mishaps and disturbances.
+          </p>
+          <br>
+
+          <div class="p1box1">
+            <br> <br>
+            <p class="nivas-heading">USER JOURNEY</p>
+            <div class="cinenav-img"><img src="images/cinenav-info.png" height="100%" width="100%"> </div>
+            <br>
+            <!-- <p class="text"> The color palette for the logo was a darker take on the traditional gender assigned colors that are given to children. As for the font,
+              I wanted a use a somewhat childish and rounded font like Rift,
+              with the minimalism and maturity that it has as well. </p> -->
+
+
+            <p class="nivas-heading"> PAIN POINTS </p>
+
+            <div class="cinenav-pp">
+              <div class="cinenav"> <img src="images/pp.png" height="100%" width="100%"> </div>
+              <!-- <div class="cinenav"> <img src="images/pp2.png" height="100%" width="100%"> </div>
+              <div class="cinenav"> <img src="images/pp1.png" height="100%" width="100%"> </div> -->
+            </div>
+
+            <br><br>
+            <p class="nivas-heading"> CORE FEATURES </p>
+            <div class="cinenav-core1"> <img src="images/core1.png" height="100%" width="100%"> </div>
+            <p class="text">
+              The personalization features allow the user to make the process of
+              finding movies to watch more personalized and tailored to what the user would enjoy based on what they have previously watched/rated highly.
+              Another important element is that the user receives notifications when tickets for movies they have hearted, release. There is also a reminder from Google Maps, on when to leave for the movie which takes multiple modes of transportation into consideration.
+
+            </p>
+            <br>
+            <div class="cinenav-core2"> <img src="images/core2.png" height="100%" width="100%"> </div>
+            <p class="text">
+              The navigational features allow the user to easily and efficiently
+              navigate to their seat as well as their theatre. On the digital ticket, it
+              mentions which side of the theatre to enter from. This is to avoid the
+               trouble of entering from the wrong side and crossing through a row of
+              people to get to your seat. For people with disabilities, in theatres that incline/stairs, entering from the wrong side can be very
+               inconvienent. The toggle feature, on the other hand, appears if the showtime has passed, and the theatre lights have dimmed, to help the
+               user navigate to the seat easily without disturbing the theatre by switching the torch app on.
+
+            </p>
+            <br>
+            <div class="cinenav-core2"> <img src="images/core3.png" height="100%" width="100%"> </div>
+            <p class="text">
+              The customer feedback features allow the user to efficiently contact an individuals' theatre customer support, without the hassle of searching for it on the theatres' website or waiting on hold for hours. The prompt pops up immediately after the movie ends and if the user reports a lost item, a
+              chat feature appears between the theatres' customer support and the user is initiated.
+            </p>
+
+<br><br>
+<p class="nivas-heading"> FINAL WALKTHROUGH </p>
+
+            <div class="video1-cine">
+              <video width="100%" height="100%" controls>
+                <source src="images/CineNav.mp4" type="video/mp4">
+                <source src="movie.ogg" type="video/ogg">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+
+
+
+
+          </div>
+
+
+          <div class="clearfix"></div>
+
+          <!-- The Modal -->
+          <div id="myModal" class="modal">
+            <span class="close"></span>
+            <img class="modal-content" id="img01">
+            <!-- <div id="caption"></div> -->
+          </div>
+        </div>
+
+        <div class="next-cinenav"> <a href="project8.html"> prev</a><a href="project0.html"> next </a></div>
+        <div class="year"> ©2020 </div>
+      </div>
+
+
+    </div>
+
+
+    <script>
+      function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+      }
+
+      function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+      }
+
+
+      var modal = document.getElementById('myModal');
+
+      modal.addEventListener('click', function() {
+        this.style.display = "none";
+      })
+
+      var span = document.getElementsByClassName("close")[0];
+
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+
+      var images = document.getElementsByTagName('img');
+      var modalImg = document.getElementById("img01");
+
+      var i;
+      for (i = 0; i < images.length; i++) {
+        images[i].onclick = function() {
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          modalImg.alt = this.alt;
+          captionText.innerHTML = this.nextElementSibling.innerHTML;
+        }
+      }
+    </script>
+
+</body>
+
+</html>
