@@ -1482,4 +1482,44 @@ gImg {
     height: 20vw;
     width: 80vw;
   }
+
+
+  .cinenav-img {
+    height: 55vw;
+    width: 97vw;
+margin-left: 2vw;
+  }
+
+
+  .cinenav-core1{
+    padding-top: 1vw;
+    height: 59vw;
+    width: 87vw;
+    margin-left: 0vw;
+  }
+
+  .cinenav-core2{
+      padding-top: 2vw;
+    height: 45vw;
+    width: 87vw;
+    margin-left: 0vw;
+  }
+
+  .next-cinenav{
+  font-size: 4.4vw;
+  margin-top: 510vw;
+  padding-bottom: 2vw;
+
+  }
+
+  .video1-cine{
+    /* border: 3px solid blue; */
+    padding-top: 2vw;
+    height: 50vw;
+    width: 87vw;
+    margin-left: auto;
+  }
+
+
+
 }

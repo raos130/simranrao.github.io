@@ -4,12 +4,12 @@ body {
 }
 
 .main {
-  height: 150vw;
+  height: 130vw;
   margin: auto;
-  padding: -30vw;
+  padding: -10vw;
   width: 94vw;
   text-align: center;
-  /* border: 3px solid red; */
+  border: 3px solid red;
 }
 
 .main-section {
@@ -35,7 +35,7 @@ body {
 
 .year {
   padding-bottom: 2vw;
-  margin-top: 1vw;
+  margin-top: 60vw;
   height: 2vw;
   width: 87vw;
   font-family: quiche-sans, sans-serif;
